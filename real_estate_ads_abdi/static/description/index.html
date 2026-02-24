@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Real Estate Ads - Odoo 19</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <style>
+        :root {
+          --primary-color: #0d6efd;
+          --bg-white: #fff;
+          --text-color: #121212;
+          --text-color-light: #64728f;
+        }
+        body {
+          font-family: "Montserrat", sans-serif;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            color: var(--text-color);
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            border-radius: 30px;
+            background-color: #F5F5F5;
+            border: none;
+            padding: 12px 24px;
+        }
+        .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+            border-color: transparent;
+        }
+        .screenshot-placeholder {
+            min-height: 320px;
+            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color-light);
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="my-5">
+        <div class="my-3 d-flex align-items-center justify-content-end">
+            <div class="text-center"
+                 style="background-color:#017E84 !important; font-size:0.8rem !important; color:#fff !important; font-weight:500 !important; padding:4px !important; margin:0 3px !important; border-radius:50px !important; min-width:120px !important">
+                Community
+            </div>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="position-relative"
+                     style="border-radius: 16px; background: #f8f8f8; padding: 20px 0;">
+                    <div class="row" style="padding: 2rem 0rem 0 !important;">
+                        <div class="col-lg-8 mx-auto gap-4 d-flex flex-column align-items-center">
+                            <p class="my-1 text-center text-uppercase"
+                               style="letter-spacing: 4px !important; color: var(--primary-color); font-weight: 600; font-size: 14px; line-height: 15.96px;">
+                                Real Estate Management for Odoo 19 Community Edition.
+                            </p>
+                            <h1 class="text-center text-uppercase my-0"
+                                style="color: var(--text-color); font-size: 46px; font-weight: 700; line-height: normal;">
+                                Real Estate Ads
+                            </h1>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-center align-items-center" style="margin: 3rem 0;">
+                            <img src="./icon.png" width="120" height="auto" alt="Real Estate Ads" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key highlights -->
+                <div class="" style="border-radius: 16px; padding: 60px 40px; border: 1px solid #EBEEF2; background: #F5F5F7; box-shadow: 0px 5px 20px -11px rgba(0, 0, 0, 0.25);">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+                            <h2 style="color: var(--text-color); text-align: center; font-size: 40px; font-weight: 700; text-transform: uppercase; padding-bottom: 50px;">
+                                Key Highlights
+                            </h2>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="mb-4 d-flex flex-column justify-content-center gap-3"
+                                 style="border-radius: 12px; border: 1px solid #B6BCCD; background: #FFF; padding:32px">
+                                <div class="d-flex justify-content-center align-items-center"
+                                     style="background-color:#0d6efd !important; border-radius:8px !important; height:42px; width:42px">
+                                    <i class="fa fa-home" style="color:#fff; font-size:18px"></i>
+                                </div>
+                                <h5 class="m-0" style="color:#000 !important; font-weight:bold">Properties</h5>
+                                <p class="m-0" style="font-size: 16px; font-weight: 400; color:var(--text-color-light);">
+                                    Manage property listings with name, type, tags, offer and status.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="mb-4 d-flex flex-column justify-content-center gap-3"
+                                 style="border-radius: 12px; border: 1px solid #B6BCCD; background: #FFF; padding:32px">
+                                <div class="d-flex justify-content-center align-items-center"
+                                     style="background-color:#0d6efd !important; border-radius:8px !important; height:42px; width:42px">
+                                    <i class="fa fa-file-contract" style="color:#fff; font-size:18px"></i>
+                                </div>
+                                <h5 class="m-0" style="color:#000 !important; font-weight:bold">Offers</h5>
+                                <p class="m-0" style="font-size: 16px; font-weight: 400; color:var(--text-color-light);">
+                                    Create and manage property offers with price and status.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="mb-4 d-flex flex-column justify-content-center gap-3"
+                                 style="border-radius: 12px; border: 1px solid #B6BCCD; background: #FFF; padding:32px">
+                                <div class="d-flex justify-content-center align-items-center"
+                                     style="background-color:#0d6efd !important; border-radius:8px !important; height:42px; width:42px">
+                                    <i class="fa fa-tags" style="color:#fff; font-size:18px"></i>
+                                </div>
+                                <h5 class="m-0" style="color:#000 !important; font-weight:bold">Types & Tags</h5>
+                                <p class="m-0" style="font-size: 16px; font-weight: 400; color:var(--text-color-light);">
+                                    Property types and tags for better organization.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Screenshots & tabs -->
+                <div class="mb-4 bg-white mt-5"
+                     style="border: 1px solid #EBEEF2; border-radius: 6px; box-shadow: 0px 8px 20px -4px rgba(0, 0, 0, 0.10);">
+                    <div>
+                        <ul class="nav nav-tabs justify-content-center bg-white py-2" id="myTab2" role="tablist"
+                            style="border-radius: 6px 6px 0 0;">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#overview" id="overview-tab" role="tab"
+                                   style="color:#121212; font-weight:500; font-size:16px">Screenshots</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2" data-bs-toggle="tab" href="#feature" id="feature-tab" role="tab"
+                                   style="color:#121212; font-weight:500; font-size:16px">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#faq" id="faq-tab" role="tab"
+                                   style="color:#121212; font-weight:500; font-size:16px">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#releases" id="releases-tab" role="tab"
+                                   style="color:#121212; font-weight:500; font-size:16px">Releases</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content p-md-5 p-2 py-3" id="myTabContent2">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                            <!-- Properties List View -->
+                            <div class="position-relative mb-4" style="border-radius:10px; background-color:#f4f4f4">
+                                <div class="p-md-5 p-3 position-relative">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1 style="font-weight:bold; font-size: 40px; line-height:120%; text-align:center; text-transform:capitalize; font-weight: 700;">
+                                                <span style="color:#121212;">Properties</span>
+                                                <span style="color: var(--primary-color);"> List View</span>
+                                            </h1>
+                                        </div>
+                                        <div class="col-md-12 mb-4">
+                                            <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center; color:var(--text-color-light);">
+                                                View all properties from Real Estate → Advertisements → Properties. List shows name, type, postcode, date availability, expected price and status.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <div class="d-inline-block p-3 shadow-sm" style="background-color:#fff; border-radius:10px">
+                                                <img alt="Properties list" class="img-fluid" loading="lazy"
+                                                     src="./assets/screenshots/list.png" style="min-height: 1px; max-width:100%;"
+                                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div class="screenshot-placeholder" style="display:none; width:100%; min-width:280px;">
+                                                    <span><i class="fa fa-list me-2"></i>Properties list view screenshot</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Property Form View -->
+                            <div class="position-relative mb-4" style="border-radius:10px; background-color:#f4f4f4">
+                                <div class="p-md-5 p-3 position-relative">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1 style="font-weight:bold; font-size: 40px; line-height:120%; text-align:center; text-transform:capitalize; font-weight: 700;">
+                                                <span style="color:#121212;">Property</span>
+                                                <span style="color: var(--primary-color);"> Form View</span>
+                                            </h1>
+                                        </div>
+                                        <div class="col-md-12 mb-4">
+                                            <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center; color:var(--text-color-light);">
+                                                Create and edit properties with details, offer lines, and accept or refuse offers from the form.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <div class="d-inline-block p-3 shadow-sm" style="background-color:#fff; border-radius:10px">
+                                                <img alt="Property form" class="img-fluid" loading="lazy"
+                                                     src="./assets/screenshots/form.png" style="min-height: 1px; max-width:100%;"
+                                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div class="screenshot-placeholder" style="display:none; width:100%; min-width:280px;">
+                                                    <span><i class="fa fa-file-alt me-2"></i>Property form view screenshot</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="feature" role="tabpanel" aria-labelledby="feature-tab">
+                            <div class="row py-4">
+                                <div class="col-md-6 col-sm-12 p-3">
+                                    <div class="d-flex flex-column align-items-start h-100"
+                                         style="padding:30px; border-radius:12px; background-color:#faf8ff">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-center"
+                                                 style="width:36px; height:36px; border-radius:50%; background-color:#0d6efd; margin-right:10px">
+                                                <i class="fa fa-home" style="color:#fff; font-size:14px"></i>
+                                            </div>
+                                            <p style="color:#1A202C; font-weight:600; font-size:1.2rem; margin-bottom:2px">Property management</p>
+                                        </div>
+                                        <p class="m-0 ms-5" style="color:#718096">List and form views for properties with types, tags and offers.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 p-3">
+                                    <div class="d-flex flex-column align-items-start h-100"
+                                         style="padding:30px; border-radius:12px; background-color:#faf8ff">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-center"
+                                                 style="width:36px; height:36px; border-radius:50%; background-color:#0d6efd; margin-right:10px">
+                                                <i class="fa fa-file-contract" style="color:#fff; font-size:14px"></i>
+                                            </div>
+                                            <p style="color:#1A202C; font-weight:600; font-size:1.2rem; margin-bottom:2px">Offers</p>
+                                        </div>
+                                        <p class="m-0 ms-5" style="color:#718096">Create offers on properties and accept or refuse from the property form.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 p-3">
+                                    <div class="d-flex flex-column align-items-start h-100"
+                                         style="padding:30px; border-radius:12px; background-color:#faf8ff">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-center"
+                                                 style="width:36px; height:36px; border-radius:50%; background-color:#0d6efd; margin-right:10px">
+                                                <i class="fa fa-tags" style="color:#fff; font-size:14px"></i>
+                                            </div>
+                                            <p style="color:#1A202C; font-weight:600; font-size:1.2rem; margin-bottom:2px">Types & Tags</p>
+                                        </div>
+                                        <p class="m-0 ms-5" style="color:#718096">Property types and tags for categorization.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 p-3">
+                                    <div class="d-flex flex-column align-items-start h-100"
+                                         style="padding:30px; border-radius:12px; background-color:#faf8ff">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-center"
+                                                 style="width:36px; height:36px; border-radius:50%; background-color:#0d6efd; margin-right:10px">
+                                                <i class="fa fa-search" style="color:#fff; font-size:14px"></i>
+                                            </div>
+                                            <p style="color:#1A202C; font-weight:600; font-size:1.2rem; margin-bottom:2px">Search & filters</p>
+                                        </div>
+                                        <p class="m-0 ms-5" style="color:#718096">Search and filter properties in list view.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                            <div class="row" style="background-color:#fff !important">
+                                <div class="col-md-12">
+                                    <div class="accordion" id="accordion_faq">
+                                        <div class="mb-3">
+                                            <div class="card-header collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFAQOne"
+                                                 style="cursor: pointer; background-color:#f8f8f8; border:none; border-radius:10px; padding: 12px 24px;">
+                                                <a class="card-title text-decoration-none" style="font-size:18px; font-weight:500; color:#040f3a">
+                                                    Where do I find the Real Estate menu?
+                                                    <i class="fa fa-chevron-down float-end"></i>
+                                                </a>
+                                            </div>
+                                            <div class="accordion-collapse collapse" data-bs-parent="#accordion_faq" id="collapseFAQOne"
+                                                 style="border: 1px solid #f8f8f8; border-top:none; border-radius:0 0 10px 10px;">
+                                                <p style="padding:0.75rem 1.25rem; font-size:16px; line-height:27px; color:#888;">Go to the main Apps menu and open Real Estate → Advertisements → Properties (or Offers, Property Types, Property Tags).</p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="card-header collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFAQTwo"
+                                                 style="cursor: pointer; background-color:#f8f8f8; border:none; border-radius:10px; padding: 12px 24px;">
+                                                <a class="card-title text-decoration-none" style="font-size:18px; font-weight:500; color:#040f3a">
+                                                    How do I add an offer to a property?
+                                                    <i class="fa fa-chevron-down float-end"></i>
+                                                </a>
+                                            </div>
+                                            <div class="accordion-collapse collapse" data-bs-parent="#accordion_faq" id="collapseFAQTwo"
+                                                 style="border: 1px solid #f8f8f8; border-top:none; border-radius:0 0 10px 10px;">
+                                                <p style="padding:0.75rem 1.25rem; font-size:16px; line-height:27px; color:#888;">Open a property form and use the Offers tab to add a new offer. You can accept or refuse offers from the same form.</p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="card-header collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFAQThree"
+                                                 style="cursor: pointer; background-color:#f8f8f8; border:none; border-radius:10px; padding: 12px 24px;">
+                                                <a class="card-title text-decoration-none" style="font-size:18px; font-weight:500; color:#040f3a">
+                                                    Does this module support Odoo 19 Community Edition?
+                                                    <i class="fa fa-chevron-down float-end"></i>
+                                                </a>
+                                            </div>
+                                            <div class="accordion-collapse collapse" data-bs-parent="#accordion_faq" id="collapseFAQThree"
+                                                 style="border: 1px solid #f8f8f8; border-top:none; border-radius:0 0 10px 10px;">
+                                                <p style="padding:0.75rem 1.25rem; font-size:16px; line-height:27px; color:#888;">Yes. This module is designed for Odoo 19 Community Edition.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="releases" role="tabpanel" aria-labelledby="releases-tab">
+                            <div class="row pt-5 m-0">
+                                <div class="col-md-3">
+                                    <h4 style="font-size:16px; font-weight:600; color:#514F4F; margin:0; line-height:26px;">Latest Release 19.0.1.0.0</h4>
+                                    <span style="font-size:14px; color:#7A7979; display:block; margin-bottom:20px;">2025</span>
+                                </div>
+                                <div class="col-md-8">
+                                    <div style="padding:0 0 40px">
+                                        <div style="margin:0 0 10px">
+                                            <div style="display:inline-block; padding:0px 8px; color:#514F4F; background-color:#D4EDDA; border-radius:20px">Add</div>
+                                        </div>
+                                        <ul class="pl-3 mb-0" style="color:#7A7979;">
+                                            <li>Properties, Offers, Property Types, Property Tags</li>
+                                            <li>List and form views with search and filters</li>
+                                            <li>Real Estate Ads description page</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
