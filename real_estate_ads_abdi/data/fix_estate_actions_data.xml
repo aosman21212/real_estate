@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Fix stale actions pointing to estate.property (run on install/upgrade) -->
+        <function model="real_estate.fix.actions" name="fix_actions" eval="[[]]"/>
+    </data>
+</odoo>
