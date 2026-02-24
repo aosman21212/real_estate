@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Main menu: Real Estate -->
+    <menuitem id="estate_menu_root"
+              name="Real Estate"
+              sequence="10"/>
+
+    <!-- Advertisements submenu -->
+    <menuitem id="estate_menu_advertisements"
+              name="Advertisements"
+              parent="estate_menu_root"
+              sequence="10"/>
+
+    <!-- Properties under Advertisements -->
+    <menuitem id="estate_menu_properties"
+              name="Properties"
+              parent="estate_menu_advertisements"
+              action="estate_property_action"
+              sequence="10"/>
+
+    <!-- Settings submenu (placeholder for future configuration) -->
+    <menuitem id="estate_menu_settings"
+              name="Settings"
+              parent="estate_menu_root"
+              sequence="100"/>
+
+</odoo>
