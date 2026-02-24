@@ -1,6 +1,6 @@
 {
     "name": "Real Estate Ads",
-    "author": "abdi",
+    "author": "abيdi",
     "version": "19.0.1.0.0",
     "description": "Real Estate module to show available properties",
     "category": "Sales",
