@@ -1,6 +1,6 @@
 {
     "name": "Real Estate Ads",
-    "author": "abdukarim osman , based on the module real_estate_ads",
+    "author": "LeapAI",
     "version": "19.0.1.1.0",
     "description": "Real Estate module to show available properties",
     "category": "Sales",
